@@ -1,0 +1,33 @@
+{
+  "compilerOptions": {
+    /* Basic Options */
+    "target": "es6" /* Specify ECMAScript target version: 'ES3' (default), 'ES5', 'ES2015', 'ES2016', 'ES2017','ES2018' or 'ESNEXT'. */,
+    "module": "commonjs" /* Specify module code generation: 'none', 'commonjs', 'amd', 'system', 'umd', 'es2015', or 'ESNext'. */,
+    "jsx": "react-native" /* Specify JSX code generation: 'preserve', 'react-native', or 'react'. */,
+    "rootDir": "./src" /* Specify the root directory of input files. Use to control the output directory structure with --outDir. */,
+    "noEmit": false /* Do not emit outputs. */,
+    "strict": true /* Enable all strict type-checking options. */,
+    /* Additional Checks */
+    "noUnusedLocals": true /* Report errors on unused locals. */,
+    "noUnusedParameters": true /* Report errors on unused parameters. */,
+    "noImplicitReturns": true /* Report error when not all code paths in function return a value. */,
+    "noFallthroughCasesInSwitch": true /* Report errors for fallthrough cases in switch statement. */,
+    "lib": ["esnext"],
+    /* Module Resolution Options */
+    "allowSyntheticDefaultImports": true /* Allow default imports from modules with no default export. This does not affect code emit, just typechecking. */,
+    "esModuleInterop": true /* Enables emit interoperability between CommonJS and ES Modules via creation of namespace objects for all imports. Implies 'allowSyntheticDefaultImports'. */,
+    "resolveJsonModule": true,
+    "skipLibCheck": true,
+    "allowUnreachableCode": false,
+    "noImplicitAny": false,
+    "baseUrl": ".",
+    "outDir": "./lib",
+    "declaration": true,
+    "paths": {
+      "*": ["./src/*", "./node_modules/*"]
+    },
+    "types": ["react-native"]
+  },
+  "include": ["./src/**/*"],
+  "exclude": ["./node_modules", "./scripts"]
+}
