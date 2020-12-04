@@ -6,12 +6,28 @@
 
 ### Mostly automatic installation
 
-`$ react-native link react-native-android-auto`
+In order to display the app launcher in the car display:
+
+![Launcher](./docs/launcher.png)
+
+You need to add the following lines to your app's `AndroidManifest.xml` under `<application>`:
+
+```xml
+<meta-data
+    android:name="com.google.android.gms.car.application"
+    android:resource="@xml/automotive_app_desc" />
+
+<service
+    android:name="com.shopify.rnandroidauto.CarService"
+    android:exported="true">
+    <intent-filter>
+    <action android:name="com.google.android.car.action.CAR_APP" />
+    </intent-filter>
+</service>
+```
 
 ## Usage
 ```javascript
 import AndroidAuto from 'react-native-android-auto';
-
-// TODO: What to do with the module?
-AndroidAuto;
 ```
+
