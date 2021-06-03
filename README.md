@@ -176,3 +176,11 @@ A `Screen`'s given render component's immediate child must be a template element
 | -------- | ------------- | -------------------------------------------- |
 | header   | string        | Title of the row                             |
 | children | `ReactNode[]` | only accepts instances of `<row />` as child |
+
+## Want to contribute?
+
+Check out our [Contributing Guide](./.github/CONTRIBUTING.md)
+
+## License
+
+MIT &copy; [Shopify](https://shopify.com/), see [LICENSE.md](LICENSE.md) for details.

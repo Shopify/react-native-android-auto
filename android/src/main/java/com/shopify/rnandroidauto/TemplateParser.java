@@ -71,7 +71,6 @@ public class TemplateParser {
             for (int i = 0; i < children.size(); i++) {
                 ReadableMap child = children.getMap(i);
                 String type = child.getString("type");
-                Log.d("AUTO", "Adding child to row");
 
                 if (type.equals("row")) {
                     paneBuilder.addRow(buildRow(child));
@@ -181,8 +180,6 @@ public class TemplateParser {
             loading = children.size() == 0;
         }
 
-        Log.d("AUTO", "Rendering " + (loading ? "Yes" : "No"));
-
         builder.setIsLoading(loading);
 
         if (!loading) {
@@ -191,7 +188,6 @@ public class TemplateParser {
             for (int i = 0; i < children.size(); i++) {
                 ReadableMap child = children.getMap(i);
                 String type = child.getString("type");
-                Log.d("AUTO", "Adding child to row");
 
                 if (type.equals("row")) {
                     itemListBuilder.addItem(buildRow(child));

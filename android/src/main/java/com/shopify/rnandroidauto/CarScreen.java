@@ -25,13 +25,9 @@ public class CarScreen extends Screen {
     @NonNull
     @Override
     public Template getTemplate() {
-        Log.d("AUTO", "Get Template");
         if (mTemplate != null) {
-            Log.d("AUTO", "Template is available");
             return mTemplate;
         }
-
-        Log.d("AUTO", "Template was not set");
 
         return PaneTemplate.builder(
                 Pane.builder().setIsLoading(true).build()
